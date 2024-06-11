@@ -8,11 +8,8 @@ function combine(str1, str2, str3) {
   // combine("abc", "12345", "67") == "a16b27c345"
   // Tu código:
   let result = "";
-
-  let maxLength = Math.max(str1.length, str2.length, str3.length);
-
-  // Itera desde 0 hasta la longitud máxima
-  for (let i = 0; i < maxLength; i++) {
+  let maxStrLength = Math.max(str1.length, str2.length, str3.length);
+  for (let i = 0; i < maxStrLength; i++) {
     if (str1[i]) {
       result += str1[i];
     }
